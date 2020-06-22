@@ -40,23 +40,40 @@
         .info__content
           内容は省略
 
-      %section.info
-        .info__search
-          注目の不動産
-        .info__content
-          内容は省略
+      -# %section.info
+      -#   .info__search
+      -#     注目の不動産
+      -#   .info__content
+      -#     内容は省略
         
       %section.info
         .info__search
           閲覧数ランキング
         .info__content
-          内容は省略
+          -# 内容は省略
+          .info__content--property
+            .ranking
+              1
+            = image_tag "/images/house1.jpg",width:'180px',height:"auto",class:"photo1"
 
-      %section.info
-        .info__search
-          値下げ
-        .info__content
-          内容は省略  
+            .clearfix.tb_line_box
+              .dim_icon_1002.price 
+                8200万円
+              .gross
+                6.32%
+            %p.tb_line
+              東京都調布市布田２丁目
+            %p.tb_line
+              京阪本線 千林駅 徒歩2分
+            %strong.tb_realtor 
+              あんずHOME株式会社
+
+
+      -# %section.info
+      -#   .info__search
+      -#     値下げ
+      -#   .info__content
+      -#     内容は省略  
 
     .wrap-adv
       %section.adv

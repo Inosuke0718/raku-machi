@@ -140,12 +140,69 @@ a{
               line-height: 30px;
               background-color: rgb(247, 247, 146);
               position: absolute;
-              // top: 10px;
-              left: 10px;
+              left: 7px;
+              top: -6px;
+              z-index: 3;
             }
 
             .photo1{
               margin: 10px 0;
+            }
+
+            .soldout{
+              width: 0;
+              height: 0;
+              border-width: 80px 80px 0 0;
+              border-color: #ea352d transparent transparent transparent;
+              display: block;
+              position: absolute;
+              top: 10px;
+              left: 0;
+              z-index: 1;
+              border-style: solid;
+
+              &__inner{
+                bottom: 41px;
+                right: -63px;
+                font-size: 15px;
+                position: absolute;
+                left: 0;
+                z-index: 2;
+                color: #fff;
+                transform: rotate(-45deg);
+                letter-spacing: 2px;
+                font-weight: 600;
+              }
+            }
+
+            .main-content__btn{
+              position: absolute;
+              left: 140px;
+              top: 80px;
+
+              &--like{
+              border-radius: 50%;
+              width: 28px;
+              height: 28px;
+              line-height: 28px;
+              text-align:  center; 
+              background: #c7c7c4;
+              color:  white;
+              display: flex;
+              border: none;
+              outline: none;
+              position: relative;
+
+                .fa-star{
+                  position: absolute;
+                  top: 7px;
+                  left: 3px;
+                }
+                .numLike{
+                  position: absolute;
+                  right: 2px;
+                }                
+              }
             }
 
             .clearfix.tb_line_box{

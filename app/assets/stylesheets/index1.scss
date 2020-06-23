@@ -117,6 +117,7 @@ a{
         }
 
         &__content{
+          display: flex;
           width: 100%;
           height: 210px;
           text-align:  center; 
@@ -126,6 +127,7 @@ a{
           color: rgb(116, 114, 114);
 
           &--property{
+
             width: calc(100% / 4);
             height: 10px;
             font-size: 11px;
@@ -146,7 +148,7 @@ a{
             }
 
             .photo1{
-              margin: 10px 0;
+              margin: 10px 5px;
             }
 
             .soldout{
@@ -157,7 +159,7 @@ a{
               display: block;
               position: absolute;
               top: 10px;
-              left: 0;
+              left: 5px;
               z-index: 1;
               border-style: solid;
 
@@ -203,13 +205,36 @@ a{
                   right: 2px;
                 }                
               }
+
+              &--likeyes{
+                border-radius: 50%;
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                text-align:  center; 
+                background: #c7c7c4;
+                color:  rgb(255, 0, 106);
+                display: flex;
+                border: none;
+                outline: none;
+                position: relative;
+
+                  .fa-star{
+                    position: absolute;
+                    top: 7px;
+                    left: 3px;
+                  }
+                  .numLike{
+                    position: absolute;
+                    right: 2px;
+                  }       
+              }
             }
 
             .clearfix.tb_line_box{
               display: flex;
               align-items: flex-end;
               justify-content: space-evenly;
-
               color: red;
               font-weight: bold;
 
@@ -219,7 +244,6 @@ a{
               .gross{
                 font-size: 14px;
               }
-
             }
           }
         }
@@ -233,7 +257,6 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        // background-color:#f5f5f5;
         width: 100%;
         height: 100vh;
         color: #333!important;

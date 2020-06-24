@@ -1,0 +1,306 @@
+%main.wrapper
+  = render "/products/header"
+
+  %section.contents
+    .wrap-info1
+      %section.info
+        .info__search1
+          お気に入り物件一覧
+          .info__search1--select
+            =link_to "リスト表示", "https://www.pressance.co.jp/urban/braight/realta/visittour/?utm_source=rakumachi&utm_medium=banner&utm_campaign=200612&utm_content=top_194x194", class:"info__search1--select-list"
+            =link_to "比較表示", "https://www.pressance.co.jp/urban/braight/realta/visittour/?utm_source=rakumachi&utm_medium=banner&utm_campaign=200612&utm_content=top_194x194", class:"info__search1--select-comp"
+        %table.main-content__table{border: "1" ,style: "border-collapse: collapse"}
+          %tbody.testmo
+            .table1
+              基本情報
+              %button.button 
+                表示／非表示を切り替える
+
+            %tr
+              %th.picture
+                画像
+              %td.picture
+                = image_tag "/images/house1.jpg",width:'180px',height:"auto",class:"photo1"
+              %td.picture
+                = image_tag "/images/house2.jpg",width:'180px',height:"auto",class:"photo1"
+              %td.picture
+                = image_tag "/images/house3.jpg",width:'180px',height:"auto",class:"photo1"
+           
+            %tr
+              %th 
+                物件名
+              %td
+                オートロック！総戸数9戸！全室角部屋！劣化対策等級3！
+              %td
+                オートロック！総戸数9戸！全室角部屋！劣化対策等級3！
+              %td
+                オートロック！総戸数9戸！全室角部屋！劣化対策等級3！
+            
+            %tr
+              %th
+                販売価格
+                .sort
+                  安 | 高
+              %td.price
+                8050万円
+              %td.price
+                8050万円  
+              %td.price
+                8050万円          
+
+            %tr
+              %th
+                表面利回り
+                .sort
+                  高 | 低
+              %td.price
+                8.00%
+              %td.price
+                8.00%
+              %td.price
+                8.00%       
+
+            %tr
+              %th
+                想定年間収入
+                .sort
+                  高 | 安             
+              %td
+                6,444,000円（537,000円/月）
+              %td
+                6,444,000円（537,000円/月）
+              %td
+                6,444,000円（537,000円/月）
+
+            %tr
+              %th 
+                所在地
+              %td
+                東京都足立区梅田3  
+              %td
+                東京都足立区梅田3  
+              %td
+                東京都足立区梅田3  
+            
+            %tr
+              %th
+                沿線交通
+              %td
+                東武伊勢崎・大師線 梅島駅 徒歩12分
+              %td
+                東武伊勢崎・大師線 梅島駅 徒歩12分  
+              %td
+                東武伊勢崎・大師線 梅島駅 徒歩12分
+                
+            %tr
+              %th
+                建築王蔵
+              %td
+                木造
+              %td
+                木造
+              %td
+                木造
+                
+            %tr
+              %th
+                築年月
+                .sort
+                  新 | 古
+              %td
+                1990年12月（築29年）
+              %td
+                1990年12月（築29年）
+              %td
+                1990年12月（築29年）
+
+            %tr
+              %th
+                土地権利
+              %td
+                所有権
+              %td
+                所有権
+              %td
+                所有権
+
+            %tr
+              %th
+                土地面積
+                .sort
+                  大 | 小                
+              %td
+                193.25㎡ 公簿
+              %td
+                193.25㎡ 公簿
+              %td
+                193.25㎡ 公簿
+
+            %tr
+              %th
+                取引態様
+              %td
+                仲介
+              %td
+                仲介
+              %td
+                仲介
+
+            %tr
+              %th
+                駐車場
+              %td
+                無し
+              %td
+                有り
+              %td
+                無し
+
+            %tr
+              %th
+                地目
+              %td
+                宅地
+              %td
+                その他
+              %td
+                宅地
+
+            %tr
+              %th
+                都市計画区域
+              %td
+                市街化区域
+              %td
+                市街化区域
+              %td
+                市街化区域
+              
+            %tr
+              %th
+                用途区域
+              %td
+                第一種低層住居専用地域
+              %td
+                第一種低層住居専用地域
+              %td
+                第一種低層住居専用地域
+
+            %tr
+              %th
+                建ぺい率
+                .sort
+                  高 | 低
+              %td
+                40%
+              %td
+                90%
+              %td
+                60%
+
+            %tr
+              %th
+                容積率
+                .sort
+                  高 | 低
+              %td
+                70%
+              %td
+                80%
+              %td
+                80%
+
+            %tr
+              %th
+                国土法提出
+                .sort
+                  要 | 不要
+              %td
+                要
+              %td
+                要
+              %td
+                不要
+
+            %tr
+              %th
+                接道状況
+                .sort
+                  遠 | 近
+              %td
+                10m
+              %td
+                4m
+              %td
+                800m
+            
+            %tr
+              %th
+                現状
+              %td
+                賃貸中（満室）
+              %td
+                賃貸中（満室）
+              %td
+                賃貸中（満室）
+
+            %tr
+              %th
+                引き渡し
+              %td
+                相談
+              %td
+                相談
+              %td
+                相談
+
+            %tr
+              %th
+                次回更新予定日
+                .sort
+                  早 | 遅                
+              %td
+                2020/07/18
+              %td
+                2020/06/26
+              %td
+                2020/06/03
+
+            %tr
+              %th
+                更新日
+                .sort
+                  早 | 遅                
+              %td
+                2020/07/10
+              %td
+                2020/06/20
+              %td
+                2020/05/01
+
+            %tr
+              %th
+                建築認識番号
+              %td
+                000-1111-2222
+              %td
+                000-1111-2222
+              %td
+                000-1111-2222
+
+            %tr
+              %th
+                管理番号
+              %td
+                89702
+              %td
+                20532
+              %td
+                05943
+
+            %tr
+              %th
+                注意事項
+              %td
+              %td
+              %td

@@ -1,0 +1,70 @@
+.wrap-info1{
+  width: 100%;
+  min-width: 1000px;
+  color: black;
+  margin-top: 20px;
+
+  .info__search1{
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: thin solid #333;
+
+    &--select{
+      position: absolute;
+      right:  0px;
+      top: 0px;
+
+      &-list{
+        font-size: 12px;
+        color: black;
+        margin: 0 10px 0 10px;
+
+      }
+      &-comp{
+        font-size: 12px;
+        color: black;
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+  tbody{
+    font-family: arial,Hiragino Kaku Gothic ProN,Meiryo,Yu Gothic,sans-serif;
+    .table1{
+      color: black;
+     
+
+      .testmo input:checked ~ .test{
+      opacity: 0;
+      background-color: red;
+    }
+   }
+  }
+  th.picture{
+    width: 170px;
+  }
+  td.picture{
+    padding: 10px 0 10px 30px;
+  }
+  th{
+    padding-left: 30px;
+    font-size: 12px;
+    background-color: #f9f8f6;
+
+
+    .sort{
+      color: blue;
+    }
+  }
+  td{
+    padding: 15px 12px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  td.price{
+    font-size: 15px;
+    color: #fc483a;
+  }
+
+}

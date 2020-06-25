@@ -29,42 +29,63 @@
       }
     }
   }
-  tbody{
-    font-family: arial,Hiragino Kaku Gothic ProN,Meiryo,Yu Gothic,sans-serif;
-    .table1{
+  .main-content__table{
+    margin-bottom: 30px;
+  }
+
+    body{
+      font-family: arial;
+    }
+    
+    th.picture{
+      width: 170px;
+    }
+    td.picture{
+      padding: 10px 0 10px 30px;
+    }
+    th{
+      padding-left: 30px;
+      font-size: 12px;
+      background-color: #f9f8f6;
+      width: 170px;
+
+      .sort{
+        color: blue;
+      }
+    }
+
+    td{
+      padding: 15px 12px;
+      font-weight: bold;
+      font-size: 12px;
+      width: 270px;
+    }
+
+    td.price{
+      font-size: 15px;
+      color: #fc483a;
+    }
+
+    #plusbtn {
+      display: none;
+    }
+    #plusbtn2 {
+      display: none;
+    }
+
+
+    button{
+      width: 21px;
+      height: 21px;
+      margin: 2px 0 2px 20px;
+    }
+
+    .tablefirst{
       color: black;
-     
-
-      .testmo input:checked ~ .test{
-      opacity: 0;
-      background-color: red;
+      margin-left: 20px;
+      margin-top: 20px;
     }
-   }
-  }
-  th.picture{
-    width: 170px;
-  }
-  td.picture{
-    padding: 10px 0 10px 30px;
-  }
-  th{
-    padding-left: 30px;
-    font-size: 12px;
-    background-color: #f9f8f6;
 
 
-    .sort{
-      color: blue;
-    }
-  }
-  td{
-    padding: 15px 12px;
-    font-weight: bold;
-    font-size: 12px;
-  }
-  td.price{
-    font-size: 15px;
-    color: #fc483a;
-  }
-
+  
 }

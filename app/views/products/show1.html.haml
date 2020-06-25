@@ -10,13 +10,14 @@
             =link_to "リスト表示", "https://www.pressance.co.jp/urban/braight/realta/visittour/?utm_source=rakumachi&utm_medium=banner&utm_campaign=200612&utm_content=top_194x194", class:"info__search1--select-list"
             =link_to "比較表示", "https://www.pressance.co.jp/urban/braight/realta/visittour/?utm_source=rakumachi&utm_medium=banner&utm_campaign=200612&utm_content=top_194x194", class:"info__search1--select-comp"
         %table.main-content__table{border: "1" ,style: "border-collapse: collapse"}
-          %tbody.testmo
-            .table1
+          %body
+            .tablefirst
               基本情報
-              %button.button 
-                表示／非表示を切り替える
+              %button{id: "plusbtn"}
+                +
+              %button{id: "minusbtn"} -
 
-            %tr
+            %tr.tablebasic
               %th.picture
                 画像
               %td.picture
@@ -25,9 +26,9 @@
                 = image_tag "/images/house2.jpg",width:'180px',height:"auto",class:"photo1"
               %td.picture
                 = image_tag "/images/house3.jpg",width:'180px',height:"auto",class:"photo1"
-           
-            %tr
-              %th 
+          
+            %tr.tablebasic
+              %th
                 物件名
               %td
                 オートロック！総戸数9戸！全室角部屋！劣化対策等級3！
@@ -36,7 +37,7 @@
               %td
                 オートロック！総戸数9戸！全室角部屋！劣化対策等級3！
             
-            %tr
+            %tr.tablebasic
               %th
                 販売価格
                 .sort
@@ -48,7 +49,7 @@
               %td.price
                 8050万円          
 
-            %tr
+            %tr.tablebasic
               %th
                 表面利回り
                 .sort
@@ -60,7 +61,7 @@
               %td.price
                 8.00%       
 
-            %tr
+            %tr.tablebasic
               %th
                 想定年間収入
                 .sort
@@ -72,7 +73,7 @@
               %td
                 6,444,000円（537,000円/月）
 
-            %tr
+            %tr.tablebasic
               %th 
                 所在地
               %td
@@ -82,7 +83,7 @@
               %td
                 東京都足立区梅田3  
             
-            %tr
+            %tr.tablebasic
               %th
                 沿線交通
               %td
@@ -92,17 +93,17 @@
               %td
                 東武伊勢崎・大師線 梅島駅 徒歩12分
                 
-            %tr
+            %tr.tablebasic
               %th
-                建築王蔵
+                建築構造
               %td
                 木造
               %td
-                木造
+                鉄筋
               %td
                 木造
                 
-            %tr
+            %tr.tablebasic
               %th
                 築年月
                 .sort
@@ -114,7 +115,7 @@
               %td
                 1990年12月（築29年）
 
-            %tr
+            %tr.tablebasic
               %th
                 土地権利
               %td
@@ -124,7 +125,7 @@
               %td
                 所有権
 
-            %tr
+            %tr.tablebasic
               %th
                 土地面積
                 .sort
@@ -136,7 +137,7 @@
               %td
                 193.25㎡ 公簿
 
-            %tr
+            %tr.tablebasic
               %th
                 取引態様
               %td
@@ -146,7 +147,15 @@
               %td
                 仲介
 
-            %tr
+        %table.main-content__table{border: "1" ,style: "border-collapse: collapse"}
+          %body
+            .tablefirst
+              詳細情報
+              %button{id: "plusbtn2"} +
+              %button{id: "minusbtn2"} -
+
+            %tr.tablebasic
+            %tr.tableaddition
               %th
                 駐車場
               %td
@@ -156,7 +165,7 @@
               %td
                 無し
 
-            %tr
+            %tr.tableaddition
               %th
                 地目
               %td
@@ -166,7 +175,7 @@
               %td
                 宅地
 
-            %tr
+            %tr.tableaddition
               %th
                 都市計画区域
               %td
@@ -176,7 +185,7 @@
               %td
                 市街化区域
               
-            %tr
+            %tr.tableaddition
               %th
                 用途区域
               %td
@@ -186,7 +195,7 @@
               %td
                 第一種低層住居専用地域
 
-            %tr
+            %tr.tableaddition
               %th
                 建ぺい率
                 .sort
@@ -198,7 +207,7 @@
               %td
                 60%
 
-            %tr
+            %tr.tableaddition
               %th
                 容積率
                 .sort
@@ -210,7 +219,7 @@
               %td
                 80%
 
-            %tr
+            %tr.tableaddition
               %th
                 国土法提出
                 .sort
@@ -222,7 +231,7 @@
               %td
                 不要
 
-            %tr
+            %tr.tableaddition
               %th
                 接道状況
                 .sort
@@ -234,7 +243,7 @@
               %td
                 800m
             
-            %tr
+            %tr.tableaddition
               %th
                 現状
               %td
@@ -244,7 +253,7 @@
               %td
                 賃貸中（満室）
 
-            %tr
+            %tr.tableaddition
               %th
                 引き渡し
               %td
@@ -254,7 +263,7 @@
               %td
                 相談
 
-            %tr
+            %tr.tableaddition
               %th
                 次回更新予定日
                 .sort
@@ -266,7 +275,7 @@
               %td
                 2020/06/03
 
-            %tr
+            %tr.tableaddition
               %th
                 更新日
                 .sort
@@ -278,7 +287,7 @@
               %td
                 2020/05/01
 
-            %tr
+            %tr.tableaddition
               %th
                 建築認識番号
               %td
@@ -288,7 +297,7 @@
               %td
                 000-1111-2222
 
-            %tr
+            %tr.tableaddition
               %th
                 管理番号
               %td
@@ -298,9 +307,12 @@
               %td
                 05943
 
-            %tr
+            %tr.tableaddition
               %th
                 注意事項
               %td
               %td
               %td
+
+  %footer
+    収益物件数 No.1  不動産投資のことなら国内最大の不動産投資サイト「楽待』  © Firstlogic

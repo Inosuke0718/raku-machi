@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## WebSite(URL)
+* https://raku-machi.herokuapp.com/
 
-Things you may want to cover:
+## Improvement idea
+* https://docs.google.com/spreadsheets/d/11s_TTJjykE4SOK3copKrAIvKGt2LWJfZaoh-7H5x71w/edit?usp=sharing
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Memo for DB
+* https://docs.google.com/spreadsheets/d/1sAIWinoYU4j39Kz4dwEWVc_28GOEQrESvEbDHuNMtTg/edit?usp=sharing
